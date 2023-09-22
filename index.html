@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>httssocket#2886</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="httssocket#2886">
+    <meta property="og:url" content="https://cliphd.ga/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://i.imgur.com/0bcCmOg.gif">
+    <meta name="theme-color" content="#2f3136">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="card design.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
+</head>
+<body>
+<main>
+    <script>
+        function audioPlay() {
+            var audio = document.getElementById("audio");
+            audio.volume = 0.4;
+            audio.play();
+        }
+
+        function videoPlay() {
+            var video = document.getElementById("video");
+            video.play();
+        }
+
+        function toggleAudio() {
+            var audio = document.getElementById("audio");
+
+            if (audio.paused) {
+                audio.volume = 0.4;
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        // Add this code to trigger the label click when the checkbox is clicked
+        var btn = document.getElementById("btn");
+        var btnLabel = document.getElementById("btn-label");
+
+        btn.addEventListener("click", function () {
+            btnLabel.click();
+        });
+    </script>
+    
+    <input type="checkbox" id="overlay-toggle" autocomplete="off">
+    <div class="content">
+        <input type="checkbox" id="btn" autocomplete="off" onchange="toggleAudio()">
+        <label for="btn" id="btn-label">
+            <span class="track"></span>
+            <span class="thumb">
+                <span class="eye"></span>
+            </span>
+        </label>
+    </div>
+    
+    <div class="overlay fullscreen">
+        <label for="overlay-toggle" onclick="videoPlay()">
+            <span class="no-hover" style="font-family: derk; font-size: 0.6em;">tap to enter</span>
+            <span class="hover" style="font-family: derk; font-size: 0.6em;">click to enter</span>
+        </label>
+    </div>
+    <audio loop="" preload="auto" id="audio">
+        <source src="assets/audio/audio.mp3" type="audio/mp3">
+    </audio>
+    <video muted="muted" loop="" playsinline="" preload="auto" class="fullscreen bg-video" id="video">
+        <source src="assets/images/bg.mp4" type="video/mp4">
+    </video>
+    <section class="fullscreen text-content">
+    </section>
+</main>
+<div class="container">
+    <div class="card__1 card-color__1">
+        <div class="image">
+            <img src="WhatsApp Image 2023-09-16 at 23.19.33.jpg" alt="">
+        </div>
+        <div class="content">
+            <h1>Abdalrhman.Ahmed</h1>
+            <h2>Abdalrhman.Ahmed</h2>
+            <a href="#" class="btn">View More</a>
+            <div class="social">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-github fa-2x"></i>
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
